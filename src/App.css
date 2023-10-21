@@ -1,0 +1,85 @@
+
+.bg-ul{
+  background-color: rgb(227, 227, 227);
+}
+.p-ban-1{
+  position: relative;
+  top: 105px;
+  right: 46px;
+  object-fit: contain;
+}
+.bg-accordian{
+  background-color: rgb(206, 202, 202);
+}
+.p-ban-2{
+  position: relative;
+  top: 75px;
+  right: 46px;
+  object-fit: contain;
+}
+.w-anchor{
+  display: inline-block;
+  width: 90%;
+}
+.top-img{
+  top: 60% !important;
+  margin: 40px;
+  height: 200px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./aside.png);
+}
+.play-btn{
+  animation: play 2s ease infinite;
+  cursor: pointer;
+}
+@keyframes play {
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.list-item-st{
+  text-decoration: none;
+  color: black;
+  background-color: rgb(231, 231, 232);
+  list-style:decimal;
+  font-weight: 100;
+  padding: 10px;
+  cursor: pointer;
+}
+.list-item-st:hover{
+  background-color: rgb(200, 200, 203);
+}
+
+.border-li{
+  border-right: 1px solid white;
+  height: 65px;
+}
+.collapse-horizontal li{
+  list-style: none;
+}
+
+.accordion-button::after {
+color: rgb(88, 88, 232) !important;
+}
+@media (max-width:800px) {
+  .sm-adjust{
+    flex-direction: column;
+  }
+  .w-sm-adjust{
+    width: 100% !important;
+  }
+  .w-sm-adjust-side{
+    width: 100% !important;
+ 
+  }
+  .top-img{
+    display: none;
+  }
+}
